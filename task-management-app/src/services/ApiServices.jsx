@@ -12,7 +12,7 @@ const getApiData = async()=>{
       }
 }
 
-const createTask = async()=>{
+const createTask = async(task)=>{
     try {
         const response = await axios.post(ENDPOINTS.TODOS, {
           title: task.title,

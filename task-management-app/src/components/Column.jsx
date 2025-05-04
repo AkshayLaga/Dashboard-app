@@ -1,7 +1,7 @@
 import React from "react";
 import Card from "./Card";
 import { useDrop } from "react-dnd";
-
+import './Dashboard.css'
 const Column = ({ title, cards, moveCard }) => {
   const [, drop] = useDrop({
     accept: "CARD",
@@ -18,6 +18,7 @@ const Column = ({ title, cards, moveCard }) => {
         padding: "1rem",
         borderRadius: "8px",
       }}
+      className="_userDetail"
     >
       <h3>{title}</h3>
       {cards.map((card) => (

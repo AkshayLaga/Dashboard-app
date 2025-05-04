@@ -17,42 +17,33 @@ const AddTaskModal = ({ onClose, onSubmit }) => {
 
   return (
     <div
-      style={{
-        position: "fixed",
-        top: "30%",
-        left: "35%",
-        background: "#fff",
-        padding: "1.5rem",
-        borderRadius: "8px",
-        boxShadow: "0 4px 6px rgba(0,0,0,0.1)",
-        zIndex: 1000,
-      }}
+      className="_taskView"
     >
       <h3>Add New Task</h3>
       <input
         placeholder="Title"
         value={task.title}
         onChange={(e) => setTask({ ...task, title: e.target.value })}
-        style={{ display: "block", width: "100%", marginBottom: "0.5rem" }}
+        className="_taskInputBox"
       />
       <textarea
         placeholder="Description"
         value={task.description}
         onChange={(e) => setTask({ ...task, description: e.target.value })}
         rows={3}
-        style={{ width: "100%", marginBottom: "0.5rem" }}
+        className="_modalPopupLabel"
       />
       <select
         value={task.status}
         onChange={(e) => setTask({ ...task, status: e.target.value })}
-        style={{ width: "100%", marginBottom: "0.5rem" }}
+        className="_modalPopupLabel"
       >
         <option value="To Do">To Do</option>
         <option value="In Progress">In Progress</option>
         <option value="Done">Done</option>
       </select>
-      <div style={{ textAlign: "right" }}>
-        <button onClick={handleSubmit} style={{ marginRight: "0.5rem" }}>
+      <div className="_btnParentDiv">
+        <button onClick={handleSubmit} className="_addBtn">
           Add
         </button>
         <button onClick={onClose}>Cancel</button>
