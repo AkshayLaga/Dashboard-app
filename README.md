@@ -7,7 +7,7 @@ To start/run the app, use-
    npm run dev 
 
 Self-Evaluation Document:
-a. Half-Page Summary:                       
+a. Half-Page Summary:                                                                     
        This project is a responsive Kanban-style task management board built using React, react-dnd, and Axios for API integration. It features three columns ("To Do", "In Progress", "Done"), allows users to drag and drop tasks between columns, and supports task creation via a modal. The board fetches tasks from a placeholder API and displays them dynamically. While the drag-and-drop and API integration work well, the styling could be further polished for larger screens, and task editing is not yet implemented.
 
 b. Self-Criticism
@@ -30,7 +30,7 @@ Given more time, I would:
 
      IV. Improve accessibility and keyboard navigation.
 
-Add unit tests for core components and services.
+     V. Add unit tests for core components and services.
 
 
 d. Technology Rating
